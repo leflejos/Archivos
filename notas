@@ -1,0 +1,74 @@
+md,mkdir - crear carpeta
+rmdir - borrar carpeta
+rd - borrar directorio
+del, erase - borrar archivo
+copy con 1.txt
+attrib/?
+*------------------------------------------------*
+scripts, xploits, sqli, armitage, xss, parriot, angularjs
+*------------------------------------------------*
+display: block;
+text-align: center;
+margin: auto;
+margin-top: 200px;
+martin-right:200px;
+margin.Buttom:200px;
+margin: ypx xpx;
+padding: 100px; -----> Padding es margen pero dentro.
+padding: 5px 12px -----> 5px es en = y , 12px es en = x.
+*------------------------------------------------*
+.menu li{
+list-style: none;
+padding: 5px;
+fond: Bold 14px verdana;
+border: 1ox solid black;
+display: inline-block;
+}
+*------------------------------------------------*
+.clase1 h1{
+text-align: left;
+}
+*------------------------------------------------*
+border: 1px solid yellow;      ------> (solid or dasher)
+float:left;
+.footer{
+clear both         ------> (esto regulariza el float)
+}
+*------------------------------------------------*
+display:block;
+text-align:center; ----> para txt
+margin:auto; ----> para img
+*------------------------------------------------*
+document.write(variable1)
+<script src="x.js"></script>
+*------------------------------------------------*
+var nombre = prompt("tu nombre");
+parseInt ----> convierte cualquier valor a numérico.
+*---------------*
+x = "50"
+parseInt(x);
+x = 50
+*---------------*
+parseFloat ----> decimales
+var edad = parseInt(prompt("escribe datos"));
+else o else if();
+var d = document.getElementById
+var lienzo = x.getContext("2d");
+*------------------------------------------------*
+--algoritmo para trazo de líneas en canvas--
+lienzo.beginPath();
+lienzo.strokeStyle="red";
+lienzo.moveTo(y,x);
+lienzo.lineTo(y,x);
+lienzo.stroke();
+lienzo.closePath();
+*------------------------------------------------*
+--while or for--
+for(x=0 ; x<999 ; x++){
+variable5 = variable5 + +1
+}
+*------------------------------------------------*
+<input type="text"/>
+<input type="button" value="texto_De_Boton"/>
+variable.addEventListener("click",funcion_Name);
+*------------------------------------------------*
