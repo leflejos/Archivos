@@ -72,3 +72,11 @@ variable5 = variable5 + +1
 <input type="button" value="texto_De_Boton"/>
 variable.addEventListener("click",funcion_Name);
 *------------------------------------------------*
+--declarar variable con variables por dentro--
+var teclas ={
+  UP: 38,
+  DOWN: 40,
+  LEFT: 37,
+  RIGHT: 39
+};
+*------------------------------------------------*
