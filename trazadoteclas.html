@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Movimiento</title>
+</head>
+<body>
+    <canvas width="300" height="300" id="dibujoarea"></canvas>
+    <p>Mueve las flechas del teclado para trazar</p>
+    <script src="acciones2.js"></script>
+</body>
+</html>
+
+<!-- 
+--- JAVASCRIPT ---
+
+var teclas = {
+    UP: 38,
+    DOWN: 40,
+    LEFT: 37,
+    RIGHT: 39
+  };
+  console.log(teclas);
+document.addEventListener("keydown", dibujardown);
+var cuadro = document.getElementById("dibujoarea");
+var papel = dibujoarea.getContext("2d");
+var x = 150;
+var y = 150;
+var movimiento = 2;
+
+dibujarLinea(149,149,151,151,papel);
+/* función que obtiene los datos para dibujar */
+function dibujarLinea(xinicial,yinicial,xfinal,yfinal,lienzo){
+    lienzo.beginPath();
+    lienzo.strokeStyle = "#7c29d4";
+    lienzo.lineWidth = 4;
+    lienzo.moveTo(xinicial,yinicial);
+    lienzo.lineTo(xfinal,yfinal);
+    lienzo.stroke();
+    lienzo.closePath();
+}
+function dibujardown(datos){
+ /* movimientos en diagonal */
+ if(datos.keyCode == teclas.LEFT && datos.keyCode == teclas.UP){
+    dibujarLinea(x,y,x - movimiento,y + movimiento,papel);
+    x = x - movimiento;
+    y = y + movimiento;
+   }
+   if(datos.keyCode == teclas.LEFT && datos.keyCode == teclas.DOWN){
+    dibujarLinea(x,y,x - movimiento,y - movimiento,papel);
+    x = x - movimiento;
+    y = y - movimiento;
+   }
+   if(datos.keyCode == teclas.DOWN && datos.keyCode == teclas.RIGHT){
+    dibujarLinea(x,y,x + movimiento,y - movimiento,papel);
+    x = x + movimiento;
+    y = y - movimiento;
+   }
+   if(datos.keyCode == teclas.RIGHT && datos.keyCode == teclas.UP){
+    dibujarLinea(x,y,x + movimiento,y + movimiento,papel);
+    x = x + movimiento;
+    y = y + movimiento;
+   }
+    /*función de movimientos sin diagonales*/
+   if(datos.keyCode == teclas.UP){
+    dibujarLinea(x,y,x,y - movimiento,papel);
+    y = y - movimiento;
+   }
+   if(datos.keyCode == teclas.DOWN){
+    dibujarLinea(x,y,x,y + movimiento,papel);
+    y = y + movimiento;
+   }
+   if(datos.keyCode == teclas.RIGHT){
+    dibujarLinea(x,y,x + movimiento,y,papel);
+    x = x + movimiento;
+   }
+   if(datos.keyCode == teclas.LEFT){
+    dibujarLinea(x,y,x - movimiento,y,papel);
+    x = x - movimiento;
+   }
+}
+
+-->
