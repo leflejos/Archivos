@@ -93,8 +93,9 @@ function aleatorio(min,maxi){
 *------------------------------------------------*
 var villa1 = document.getElementById("canvasvilla");
 var contex2d = villa1.getContext("2d");
-var mapa = "title.png";
+var mapa = "img.png";
 
 var imagen = new Image();     --------> Definición de nuevo objeto.
+imagen.src = mapa;
 *------------------------------------------------*
 a
