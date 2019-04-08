@@ -80,3 +80,21 @@ var teclas ={
   RIGHT: 39
 };
 *------------------------------------------------*
+--número aleatorio js---
+for(i=0;i<10;i++){
+    var z = aleatorio(20,40);
+    document.write(" Número: " + z + ", ");
+}
+function aleatorio(min,maxi){
+    var resultado;
+    resultado = Math.floor(Math.random() * (maxi - min + 1)) + min;
+    return resultado;
+}
+*------------------------------------------------*
+var villa1 = document.getElementById("canvasvilla");
+var contex2d = villa1.getContext("2d");
+var mapa = "title.png";
+
+var imagen = new Image();     --------> Definición de nuevo objeto.
+*------------------------------------------------*
+a
