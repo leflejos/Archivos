@@ -103,3 +103,4 @@ function dibujarmap(){
     contex2d.drawImage(imagen,0,0);
 *------------------------------------------------*
 a
+a
